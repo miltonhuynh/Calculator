@@ -3,7 +3,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: rgb(48, 47, 47);
+    background-image: url('wood.png');
+    background-size: cover;
     color: white;
 }
 
@@ -21,6 +22,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border: 3px solid yellow;
+    background-color: rgb(40, 40, 40);
     width: 7em;
     height: 35rem;
     font-size: 3.5rem;
