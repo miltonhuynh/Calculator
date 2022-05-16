@@ -1,5 +1,5 @@
-const num1 = 0;
-const num2 = 0;
+let num1 = null;
+let num2 = null;
 
 const digit_0 = document.getElementById('digit_0');
 const digit_1 = document.getElementById('digit_1');
@@ -12,5 +12,12 @@ const digit_7 = document.getElementById('digit_7');
 const digit_8 = document.getElementById('digit_8');
 const digit_9 = document.getElementById('digit_9');
 
-document.body.style.backgroundColor = "rgb(0,0,75)";
-digit_0.onclick;
+digit_1.onclick = function() {
+    if(num1 === null) {
+        num1 = 1;
+    } else {
+        num2 = 1;
+    }
+    console.log(num1);
+    console.log(num2);
+}
