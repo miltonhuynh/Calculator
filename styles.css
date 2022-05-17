@@ -1,6 +1,4 @@
-#test {
-    font-size: 3rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
     display: flex;
@@ -13,6 +11,15 @@ body {
 }
 
 #display {
+    font-family: 'VT323', monospace;
+}
+
+#display_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    font-size: 5rem;
     width: 70vw;
     height: 5rem;
     border: 5px solid black;
