@@ -13,11 +13,11 @@ const digit_8 = document.getElementById('digit_8');
 const digit_9 = document.getElementById('digit_9');
 
 digit_1.onclick = function() {
-    if(num1 === null) {
+    if (num1 === null && num2 === null) {
         num1 = 1;
-    } else {
-        num2 = 1;
-    }
+        num1.toString();
+        num1 += 1;
+    } 
+    document.getElementById('test').innerHTML = num1;
     console.log(num1);
-    console.log(num2);
 }
