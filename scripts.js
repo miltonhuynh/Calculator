@@ -21,6 +21,21 @@ const digit_7 = document.getElementById('digit_7');
 const digit_8 = document.getElementById('digit_8');
 const digit_9 = document.getElementById('digit_9');
 
+const countDecimals = function(value) {
+    let text = value.toString()
+
+    if (text.indexOf('e-') > -1) {
+      let [base, trail] = text.split('e-');
+      let deg = parseInt(trail, 10);
+      return deg;
+    }
+
+    if (Math.floor(value) !== value) {
+      return value.toString().split(".")[1].length || 0;
+    }
+    return 0;
+  }
+
 add.onclick = function() {
     num1 = parseInt(num1);
     operation = 'add';
@@ -57,12 +72,12 @@ evaluate.onclick = function() {
     if (operation === 'div') {
         answer = num1 / num2;
     }
-    // Rounds answer, prevents infinite decimals
-    if (answer % 0.1 !== 0) {
-        answer = answer.toFixed(2);
-    } else if (answer % 1 !== 0) {
-        answer = answer.toFixed(1);
+    
+    if (countDecimals(answer) > 5) {
+        answer = answer.toFixed(5);
     }
+
+
     document.getElementById('display').innerHTML = "=" + answer;
 }
 
