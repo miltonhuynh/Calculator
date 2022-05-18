@@ -29,7 +29,6 @@ add.onclick = function() {
 sub.onclick = function() {
     num1 = parseInt(num1);
     operation = 'sub';
-    console.log("sub");
 }
 
 mult.onclick = function() {
@@ -39,18 +38,31 @@ mult.onclick = function() {
 
 divide.onclick = function() {
     num1 = parseInt(num1);
-    operation = 'divide';
+    operation = 'div';
 }
 
 evaluate.onclick = function() {
     num2 = parseInt(num2);
     let answer = 0;
-    answer = num1 + num2;
-    document.getElementById('display').innerHTML = answer;
+    
+    if (operation === 'add') {
+        answer = num1 + num2;
+    }
+    if (operation === 'sub') {
+        answer = num1 - num2;
+    }
+    if (operation === 'mult') {
+        answer = num1 * num2;
+    }
+    if (operation === 'div') {
+        answer = num1 / num2;
+    }
+    document.getElementById('display').innerHTML = "=" + answer;
 }
 
 clear.onclick = function() {
-    num1 = 0;
+    num1 = null;
+    num2 = null;
     document.getElementById('display').innerHTML = num1;
     console.log('clear');
 }
