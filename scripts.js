@@ -84,7 +84,8 @@ digit_1.onclick = function() {
         num1 += 1;
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
-    } else if (operation !== null) {
+    } else if (operation !== null && num2 == null) {
+        console.log('a');
         num2 = 1;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
@@ -104,7 +105,7 @@ digit_2.onclick = function() {
         num1 += 2;
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
-    } else if (operation !== null) {
+    } else if (operation !== null && num2 == null) {
         num2 = 2;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
@@ -124,7 +125,7 @@ digit_3.onclick = function() {
         num1 += 3;
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
-    } else if (operation !== null) {
+    } else if (operation !== null && num2 == null) {
         num2 = 3;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
@@ -144,7 +145,7 @@ digit_4.onclick = function() {
         num1 += 4;
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
-    } else if (operation !== null) {
+    } else if (operation !== null && num2 == null) {
         num2 = 4;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
@@ -164,7 +165,7 @@ digit_5.onclick = function() {
         num1 += 5;
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
-    } else if (operation !== null) {
+    } else if (operation !== null && num2 == null) {
         num2 = 5;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
@@ -184,12 +185,72 @@ digit_6.onclick = function() {
         num1 += 6;
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
-    } else if (operation !== null) {
+    } else if (operation !== null && num2 == null) {
         num2 = 6;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
         num2 += 6;
+        num2 = num2.toString();
+        document.getElementById('display').innerHTML = num2;
+    }
+}
+
+digit_7.onclick = function() {
+    if (num1 === null && num2 === null) {
+        num1 = 7;
+        num1 = num1.toString();
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation === null) {
+        num1 += 7;
+        num1 = num1.toString();
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation !== null && num2 == null) {
+        num2 = 7;
+        num2 = num2.toString();
+        document.getElementById('display').innerHTML = num2;
+    } else {
+        num2 += 7;
+        num2 = num2.toString();
+        document.getElementById('display').innerHTML = num2;
+    }
+}
+
+digit_8.onclick = function() {
+    if (num1 === null && num2 === null) {
+        num1 = 8;
+        num1 = num1.toString();
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation === null) {
+        num1 += 8;
+        num1 = num1.toString();
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation !== null && num2 == null) {
+        num2 = 8;
+        num2 = num2.toString();
+        document.getElementById('display').innerHTML = num2;
+    } else {
+        num2 += 8;
+        num2 = num2.toString();
+        document.getElementById('display').innerHTML = num2;
+    }
+}
+
+digit_9.onclick = function() {
+    if (num1 === null && num2 === null) {
+        num1 = 9;
+        num1 = num1.toString();
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation === null) {
+        num1 += 9;
+        num1 = num1.toString();
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation !== null && num2 == null) {
+        num2 = 9;
+        num2 = num2.toString();
+        document.getElementById('display').innerHTML = num2;
+    } else {
+        num2 += 9;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
