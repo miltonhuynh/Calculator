@@ -97,6 +97,7 @@ clear.onclick = function() {
     num2 = null;
     operation = null;
     document.getElementById('display').innerHTML = 0;
+    document.getElementById('display_container').style.fontSize = "4rem";
 }
 
 decimal.onclick = function() {
@@ -119,6 +120,7 @@ decimal.onclick = function() {
 }
 
 digit_0.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 0;
         num1 = num1.toString();
@@ -143,6 +145,7 @@ digit_0.onclick = function() {
 }
 
 digit_1.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 1;
         num1 = num1.toString();
@@ -167,6 +170,7 @@ digit_1.onclick = function() {
 }
 
 digit_2.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 2;
         num1 = num1.toString();
@@ -191,6 +195,7 @@ digit_2.onclick = function() {
 }
 
 digit_3.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 3;
         num1 = num1.toString();
@@ -215,6 +220,7 @@ digit_3.onclick = function() {
 }
 
 digit_4.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 4;
         num1 = num1.toString();
@@ -239,6 +245,7 @@ digit_4.onclick = function() {
 }
 
 digit_5.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 5;
         num1 = num1.toString();
@@ -263,6 +270,7 @@ digit_5.onclick = function() {
 }
 
 digit_6.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 6;
         num1 = num1.toString();
@@ -287,6 +295,7 @@ digit_6.onclick = function() {
 }
 
 digit_7.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 7;
         num1 = num1.toString();
@@ -311,6 +320,7 @@ digit_7.onclick = function() {
 }
 
 digit_8.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 8;
         num1 = num1.toString();
@@ -335,6 +345,7 @@ digit_8.onclick = function() {
 }
 
 digit_9.onclick = function() {
+    document.getElementById('display_container').style.fontSize = "4rem";
     if (num1 === null && num2 === null) {
         num1 = 9;
         num1 = num1.toString();
