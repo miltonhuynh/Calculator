@@ -77,6 +77,13 @@ evaluate.onclick = function() {
     if (countDecimals(answer) > 5) {
         answer = answer.toFixed(5);
     }
+
+    answer = answer.toString();
+    if (answer.length > 10) {
+        document.getElementById('display_container').style.fontSize = "3rem";
+    }
+    answer = parseFloat(answer);
+    answer = answer.toLocaleString();
     document.getElementById('display').innerHTML = "=" + answer;
     num1 = null;
     num2 = null;
@@ -115,7 +122,9 @@ digit_0.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 0;
+        if(num1.length <= 9) {
+            num1 += 0;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null) {
@@ -123,7 +132,9 @@ digit_0.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 0;
+        if(num2.length <= 9) {
+            num2 += 0;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -135,7 +146,9 @@ digit_1.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 1;
+        if(num1.length <= 9) {
+            num1 += 1;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -143,7 +156,9 @@ digit_1.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 1;
+        if(num2.length <= 9) {
+            num2 += 1;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -155,7 +170,9 @@ digit_2.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 2;
+        if(num1.length <= 9) {
+            num1 += 2;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -163,7 +180,9 @@ digit_2.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 2;
+        if(num2.length <= 9) {
+            num2 += 2;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -175,7 +194,9 @@ digit_3.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 3;
+        if(num1.length <= 9) {
+            num1 += 3;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -183,7 +204,9 @@ digit_3.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 3;
+        if(num2.length <= 9) {
+            num2 += 3;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -195,7 +218,9 @@ digit_4.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 4;
+        if(num1.length <= 9) {
+            num1 += 4;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -203,7 +228,9 @@ digit_4.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 4;
+        if(num2.length <= 9) {
+            num2 += 4;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -215,7 +242,9 @@ digit_5.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 5;
+        if(num1.length <= 9) {
+            num1 += 5;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -223,7 +252,9 @@ digit_5.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 5;
+        if(num2.length <= 9) {
+            num2 += 5;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -235,7 +266,9 @@ digit_6.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 6;
+        if(num1.length <= 9) {
+            num1 += 6;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -243,7 +276,9 @@ digit_6.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 6;
+        if(num2.length <= 9) {
+            num2 += 6;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -255,7 +290,9 @@ digit_7.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 7;
+        if(num1.length <= 9) {
+            num1 += 7;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -263,7 +300,9 @@ digit_7.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 7;
+        if(num2.length <= 9) {
+            num2 += 7;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -275,7 +314,9 @@ digit_8.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 8;
+        if(num1.length <= 9) {
+            num1 += 8;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -283,7 +324,9 @@ digit_8.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 8;
+        if(num2.length <= 9) {
+            num2 += 8;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
@@ -295,7 +338,9 @@ digit_9.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation === null) {
-        num1 += 9;
+        if(num1.length <= 9) {
+            num1 += 9;
+        }
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
@@ -303,7 +348,9 @@ digit_9.onclick = function() {
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     } else {
-        num2 += 9;
+        if(num2.length <= 9) {
+            num2 += 9;
+        }
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
     }
