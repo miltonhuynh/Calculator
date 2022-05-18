@@ -78,6 +78,9 @@ evaluate.onclick = function() {
         answer = answer.toFixed(5);
     }
     document.getElementById('display').innerHTML = "=" + answer;
+    num1 = null;
+    num2 = null;
+    operator = null;
 }
 
 clear.onclick = function() {
