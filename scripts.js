@@ -57,6 +57,12 @@ evaluate.onclick = function() {
     if (operation === 'div') {
         answer = num1 / num2;
     }
+    // Rounds answer, prevents infinite decimals
+    if (answer % 0.1 !== 0) {
+        answer = answer.toFixed(2);
+    } else if (answer % 1 !== 0) {
+        answer = answer.toFixed(1);
+    }
     document.getElementById('display').innerHTML = "=" + answer;
 }
 
