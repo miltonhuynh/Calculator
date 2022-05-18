@@ -79,7 +79,9 @@ evaluate.onclick = function() {
     }
 
     answer = answer.toString();
-    if (answer.length > 10) {
+    if (answer.length > 12) {
+        document.getElementById('display_container').style.fontSize = "2.5rem";
+    } else if (answer.length > 10) {
         document.getElementById('display_container').style.fontSize = "3rem";
     }
     answer = parseFloat(answer);
