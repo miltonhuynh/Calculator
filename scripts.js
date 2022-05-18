@@ -76,8 +76,6 @@ evaluate.onclick = function() {
     if (countDecimals(answer) > 5) {
         answer = answer.toFixed(5);
     }
-
-
     document.getElementById('display').innerHTML = "=" + answer;
 }
 
