@@ -63,7 +63,8 @@ evaluate.onclick = function() {
 clear.onclick = function() {
     num1 = null;
     num2 = null;
-    document.getElementById('display').innerHTML = num1;
+    operation = null;
+    document.getElementById('display').innerHTML = 0;
     console.log('clear');
 }
 
