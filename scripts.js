@@ -4,6 +4,7 @@ let operation = null;
 
 const clear = document.getElementById('clear');
 const evaluate = document.getElementById('evaluate');
+const decimal = document.getElementById('decimal');
 
 const add = document.getElementById('addition');
 const sub = document.getElementById('subtract');
@@ -37,27 +38,27 @@ const countDecimals = function(value) {
   }
 
 add.onclick = function() {
-    num1 = parseInt(num1);
+    num1 = parseFloat(num1);
     operation = 'add';
 }
 
 sub.onclick = function() {
-    num1 = parseInt(num1);
+    num1 = parseFloat(num1);
     operation = 'sub';
 }
 
 mult.onclick = function() {
-    num1 = parseInt(num1);
+    num1 = parseFloat(num1);
     operation = 'mult';
 }
 
 divide.onclick = function() {
-    num1 = parseInt(num1);
+    num1 = parseFloat(num1);
     operation = 'div';
 }
 
 evaluate.onclick = function() {
-    num2 = parseInt(num2);
+    num2 = parseFloat(num2);
     let answer = 0;
     
     if (operation === 'add') {
@@ -84,6 +85,25 @@ clear.onclick = function() {
     num2 = null;
     operation = null;
     document.getElementById('display').innerHTML = 0;
+}
+
+decimal.onclick = function() {
+    if (num1 === null && num2 === null) {
+        num1 = ".";
+        num1 = num1.toString();
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation === null) {
+        num1 = num1.toString();
+        num1 += ".";
+        document.getElementById('display').innerHTML = num1;
+    } else if (operation !== null && num2 === null) {
+        num2 = ".";
+        num2 = num2.toString();
+        document.getElementById('display').innerHTML = num2;
+    } else {
+        num2 += ".";
+        document.getElementById('display').innerHTML = num2;
+    }
 }
 
 digit_0.onclick = function() {
@@ -116,7 +136,6 @@ digit_1.onclick = function() {
         num1 = num1.toString();
         document.getElementById('display').innerHTML = num1;
     } else if (operation !== null && num2 == null) {
-        console.log('a');
         num2 = 1;
         num2 = num2.toString();
         document.getElementById('display').innerHTML = num2;
