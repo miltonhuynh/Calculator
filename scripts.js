@@ -80,7 +80,7 @@ evaluate.onclick = function() {
     document.getElementById('display').innerHTML = "=" + answer;
     num1 = null;
     num2 = null;
-    operator = null;
+    operation = null;
 }
 
 clear.onclick = function() {
