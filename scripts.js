@@ -5,6 +5,7 @@ let operation = null;
 const clear = document.getElementById('clear');
 const evaluate = document.getElementById('evaluate');
 const decimal = document.getElementById('decimal');
+const backspace = document.getElementById('backspace');
 
 const add = document.getElementById('addition');
 const sub = document.getElementById('subtract');
@@ -55,6 +56,16 @@ mult.onclick = function() {
 divide.onclick = function() {
     num1 = parseFloat(num1);
     operation = 'div';
+}
+
+backspace.onclick = function() {
+    if (operation === null) {
+        num1 = num1.slice(0, -1);
+        document.getElementById('display').innerHTML = num1;
+    } else {
+        num2 = num2.slice(0, -1);
+        document.getElementById('display').innerHTML = num2;
+    }
 }
 
 evaluate.onclick = function() {
