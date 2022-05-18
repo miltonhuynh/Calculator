@@ -86,7 +86,6 @@ clear.onclick = function() {
     num2 = null;
     operation = null;
     document.getElementById('display').innerHTML = 0;
-    console.log('clear');
 }
 
 digit_0.onclick = function() {
