@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +10,48 @@
     <title>Calculator</title>
 </head>
 
+<div id="github">
+    <a href="https://github.com/miltonhuynh/magic8ball"><i class="fab fa-github"></i></a>
+</div>
+
+
 <div id="container">
-    <div id="display_container">
-        <div id="display">0</div>
+    
+    <div class="column">
+        <div id="display_container">
+            <div id="display">0</div>
+        </div>
     </div>
     <div class="column">
-        <div id="clear" class="individual">AC</div>
+        <div id="clear" class="individual">RESET</div>
     </div>
     <div class="column">
         <div id="digit_7" class="individual">7</div>
         <div id="digit_8"  class="individual">8</div>
         <div id="digit_9"  class="individual">9</div>
-        <div id="divide" class="individual">/</div>
+        <div id="divide" class="individual operator">/</div>
     </div>
 
     <div class="column">
         <div id="digit_4" class="individual">4</div>
         <div id="digit_5" class="individual">5</div>
         <div id="digit_6" class="individual">6</div>
-        <div id="multiply" class="individual">X</div>
+        <div id="multiply" class="individual operator">X</div>
     </div>
 
     <div class="column">
         <div id="digit_1" class="individual">1</div>
         <div id="digit_2" class="individual">2</div>
         <div id="digit_3" class="individual">3</div>
-        <div id="subtract" class="individual">-</div>
+        <div id="subtract" class="individual operator">-</div>
     </div>
 
     <div class="column">
         <div id="digit_0">0</div>
-        <div id="addition" class="individual">+</div>
-        <div id="evaluate" class="individual">=</div>
+        <div id="addition" class="individual operator">+</div>
+        <div id="evaluate" class="individual operator">=</div>
     </div>
-
-
 </div>
 
+<div id="footer">Created by Milton Huynh using only HTML, CSS and JavaScript</div>
 </html>
