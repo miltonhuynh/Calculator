@@ -88,12 +88,13 @@ evaluate.onclick = function() {
     if (countDecimals(answer) > 5) {
         answer = answer.toFixed(5);
     }
-
+    
+    // Converts to string to use .length
     answer = answer.toString();
-    if (answer.length > 12) {
-        document.getElementById('display_container').style.fontSize = "2.5rem";
-    } else if (answer.length > 10) {
+    if (answer.length > 9) {
         document.getElementById('display_container').style.fontSize = "3rem";
+    } else if (answer.length > 7) {
+        document.getElementById('display_container').style.fontSize = "3.5rem";
     }
     answer = parseFloat(answer);
     answer = answer.toLocaleString();
